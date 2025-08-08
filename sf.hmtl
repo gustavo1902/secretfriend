@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amigo Secreto Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎄 Amigo Secreto Online 🎁</h1>
+        
+        <div class="input-section">
+            <input type="text" id="participantName" placeholder="Nome do participante">
+            <input type="email" id="participantEmail" placeholder="E-mail (opcional)">
+            <button id="addParticipant">Adicionar</button>
+        </div>
+        
+        <div class="participants-list">
+            <h2>Participantes (<span id="count">0</span>)</h2>
+            <ul id="participants"></ul>
+        </div>
+        
+        <div class="actions">
+            <button id="draw" disabled>Realizar Sorteio</button>
+            <button id="clear">Limpar Tudo</button>
+        </div>
+        
+        <div id="results" class="hidden">
+            <h2>Resultado do Sorteio</h2>
+            <div id="drawResults"></div>
+            <button id="sendEmails">Enviar resultados por e-mail</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
